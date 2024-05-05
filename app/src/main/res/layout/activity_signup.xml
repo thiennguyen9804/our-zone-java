@@ -11,31 +11,28 @@
 
     <TextView
         android:id="@+id/sign_up"
-        android:layout_width="196dp"
-        android:layout_height="71dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal|top"
         android:text="@string/sign_up"
         android:textAppearance="@style/sign_up"
         android:textFontWeight="800"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/layout_bg"
         android:backgroundTint="#D0E2DE"
-        android:maxWidth="400dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sign_up">
 
@@ -118,40 +115,46 @@
 
         <TextView
             android:id="@+id/termsTextView"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginHorizontal="43dp"
             android:layout_marginTop="15dp"
             android:text="@string/terms"
-            android:textSize="11sp"
-            android:textColor="#000"/>
+            android:textColor="#000"
+            android:textSize="11sp" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/cancelButton"
-        android:layout_width="103dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="#fff"
         android:text="Cancel"
         android:textColor="#738F81"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/signUpButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:strokeColor="#949494"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_constraintHeight_default="wrap" />
+
 
     <Button
         android:id="@+id/signUpButton"
-        android:layout_width="103dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="40dp"
-        android:text="Sign up"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="32dp"
         android:backgroundTint="#738F81"
+        android:text="Sign up"
         android:textColor="#fff"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -161,14 +164,14 @@
     <TextView
         android:id="@+id/loginTextView"
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_marginBottom="52dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="@string/already"
+        android:textColor="#000"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        android:textColor="#000"/>
+        app:layout_constraintTop_toBottomOf="@+id/signUpButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
