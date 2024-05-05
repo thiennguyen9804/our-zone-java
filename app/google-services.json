@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "447026380514",
+    "project_id": "ourzone-461e2",
+    "storage_bucket": "ourzone-461e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447026380514:android:279ac8c19dd7b1244a68bb",
+        "android_client_info": {
+          "package_name": "com.example.ourzone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-tByFQQj3QmuU9kfqhcmdAB_b--U4y_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

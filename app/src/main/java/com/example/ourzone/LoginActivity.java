@@ -12,6 +12,7 @@ import android.text.style.ClickableSpan;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.StyleSpan;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -21,7 +22,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,11 @@ public class Login extends AppCompatActivity {
         });
 
         signupStyle();
+
+        Button logInButton = findViewById(R.id.logInButton);
+        logInButton.setOnClickListener(v -> {
+            startActivity(new Intent(this, HomeActivity.class));
+        });
     }
 
     protected void signupStyle() {

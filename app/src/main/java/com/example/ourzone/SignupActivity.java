@@ -2,7 +2,6 @@ package com.example.ourzone;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.SpannableString;
@@ -22,7 +21,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Signup extends AppCompatActivity {
+public class SignupActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +65,7 @@ public class Signup extends AppCompatActivity {
 
             @Override
             public void onClick(@NonNull View widget) {
-                startActivity(new Intent(Signup.this, Login.class));
+                startActivity(new Intent(SignupActivity.this, LoginActivity.class));
             }
             @Override
             public void updateDrawState(TextPaint ds) {
