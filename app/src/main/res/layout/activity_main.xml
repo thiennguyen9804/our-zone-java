@@ -10,60 +10,101 @@
     android:background="#D0E2DE"
     tools:context=".MainActivity">
 
+
+    <ImageView
+        android:id="@+id/imageViewBr"
+        android:layout_width="match_parent"
+        android:layout_height="715dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/linear_br"
+        android:elevation="0dp"
+        android:padding="16dp"
+        android:scaleType="centerCrop"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="H,2:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/ellipse_18"
+        android:layout_width="220dp"
+        android:layout_height="185dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/oval"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="199dp"
-        android:layout_height="121dp"
-        android:layout_marginTop="104dp"
+        android:layout_height="191dp"
         android:contentDescription="our"
         android:src="@drawable/our"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintHorizontal_bias="0.169"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.159" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="279dp"
         android:layout_height="153dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="188dp"
         android:contentDescription="zone"
         android:src="@drawable/zone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.337" />
+
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
+        android:layout_width="79dp"
+        android:layout_height="84dp"
         android:layout_marginTop="48dp"
         android:contentDescription="leaf"
         android:src="@drawable/leaf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/joinBtn"
-        android:layout_width="334dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="84dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#fff"
         android:elevation="8dp"
+        android:letterSpacing="0.08"
+        android:text="JOIN US"
+        android:textColor="#738F81"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="parent"
-        android:textColor="#738F81"
-        android:backgroundTint="#fff"
-        android:text="JOIN US"
-        android:textSize="24sp"
-        android:letterSpacing="0.08"
-        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93"
+        app:layout_constraintWidth_percent="0.7"
         />
-
-
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout >
+</androidx.constraintlayout.widget.ConstraintLayout>
