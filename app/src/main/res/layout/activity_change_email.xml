@@ -5,10 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditName"
+    tools:context=".ChangeEmail"
     android:background="#F8FFF8">
 
   <ImageView
+      android:id="@+id/btnBack"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:background="@drawable/vector_arrow_back"
@@ -23,7 +24,7 @@
       />
 
   <TextView
-      android:id="@+id/textChangeName"
+      android:id="@+id/textChangeEmail"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginLeft="95dp"
@@ -40,13 +41,15 @@
       />
 
   <EditText
+      android:id="@+id/txbNewEmail"
       android:layout_width="309dp"
-      android:layout_height="42dp"
+      android:layout_height="48dp"
       android:layout_marginLeft="51dp"
       android:layout_marginTop="330dp"
       android:hint="Enter your email"
-      android:textAppearance="@style/textInTxb"
       android:background="@drawable/txb_change_info"
+      android:fontFamily="@font/opensans_regular"
+      android:textAppearance="@style/textInTxb"
       android:paddingStart="20dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
@@ -57,9 +60,9 @@
   </EditText>
 
   <Button
-      android:id="@+id/rectangle_4"
+      android:id="@+id/btnSave"
       android:layout_width="118dp"
-      android:layout_height="42dp"
+      android:layout_height="48dp"
       android:layout_marginLeft="146dp"
       android:layout_centerHorizontal="true"
       android:layout_alignParentTop="true"

@@ -5,10 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditName"
+    tools:context=".ChangePhoneNumber"
     android:background="#F8FFF8">
 
     <ImageView
+        android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/vector_arrow_back"
@@ -23,7 +24,7 @@
         />
 
     <TextView
-        android:id="@+id/textChangeName"
+        android:id="@+id/textChangePhoneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -40,6 +41,7 @@
         />
 
     <FrameLayout
+        android:id="@+id/frmChangePhoneNumber"
         android:layout_width="309dp"
         android:layout_height="42dp"
         android:layout_marginLeft="51dp"
@@ -51,12 +53,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
         <TextView
+            android:id="@+id/lblHeaderNumber"
             android:layout_width="92dp"
             android:layout_height="42dp"
             android:background="@drawable/text_viet_nam"
             />
 
         <ImageView
+            android:id="@+id/imgVietNam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/vector_vietnam"
@@ -65,16 +69,18 @@
             />
 
         <TextView
+            android:id="@+id/nmbHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+84"
-            android:textAppearance="@style/textHeaderNumber"
+            android:textAppearance="@style/textHeaderNbr"
             android:fontFamily="@font/opensans_semibold"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="40dp"
             />
 
         <EditText
+            android:id="@+id/txbChangePhoneNumber"
             android:layout_width="217dp"
             android:layout_height="42dp"
             android:hint="12.345.6789"
@@ -88,7 +94,7 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/rectangle_4"
+        android:id="@+id/btnSave"
         android:layout_width="118dp"
         android:layout_height="42dp"
         android:layout_marginLeft="146dp"

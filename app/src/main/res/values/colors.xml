@@ -4,4 +4,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="mint5">#738F81</color>
     <color name="mint4">#AAC2B3</color>
+    <color name="theme1">#DC8686</color>
+    <color name="theme2">#E5B29C</color>
+    <color name="theme3">#798F74</color>
+    <color name="theme4">#85C9D8</color>
+    <color name="theme5">#A3A2E1</color>
+    <color name="theme6">#FCC9FD</color>
+    <color name="theme7">#8C7B83</color>
 </resources>

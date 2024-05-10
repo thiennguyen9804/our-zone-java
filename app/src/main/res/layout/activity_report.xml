@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditName"
+    tools:context=".Report"
     android:background="#F8FFF8">
 
     <ImageView
@@ -24,12 +24,12 @@
         />
 
     <TextView
-        android:id="@+id/textChangeName"
+        android:id="@+id/textReport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="270dp"
-        android:text="Enter your name"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="200dp"
+        android:text="Report your problem"
         android:textAppearance="@style/topicOfScreen"
         android:fontFamily="@font/opensans_extrabold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,13 +41,13 @@
         />
 
     <EditText
-        android:id="@+id/editFirstName"
+        android:id="@+id/txbEnterEmail"
         android:layout_width="342dp"
         android:layout_height="42dp"
         android:background="@drawable/txb_change_info"
         android:layout_marginHorizontal="34dp"
-        android:layout_marginTop="330dp"
-        android:hint="First name"
+        android:layout_marginTop="260dp"
+        android:hint="Your email address"
         android:paddingStart="20dp"
         android:textAppearance="@style/textInTxb"
         android:fontFamily="@font/opensans_regular"
@@ -59,16 +59,18 @@
         app:layout_constraintVertical_bias="0.0"/>
 
     <EditText
-        android:id="@+id/editLastName"
+        android:id="@+id/txbReport"
         android:layout_width="342dp"
-        android:layout_height="42dp"
-        android:background="@drawable/txb_change_info"
-        android:layout_marginTop="384dp"
+        android:layout_height="220dp"
+        android:background="@drawable/txb_report"
+        android:layout_marginTop="320dp"
         android:layout_marginHorizontal="34dp"
-        android:hint="Last name"
+        android:hint="Tell us about what's going on"
         android:fontFamily="@font/opensans_regular"
         android:textAppearance="@style/textInTxb"
         android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:gravity="top"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -77,15 +79,15 @@
         app:layout_constraintVertical_bias="0.0"/>
 
     <Button
-        android:id="@+id/btnSave"
+        android:id="@+id/btnSent"
         android:layout_width="118dp"
         android:layout_height="42dp"
         android:layout_marginLeft="146dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="451dp"
+        android:layout_marginTop="570dp"
         android:background="@drawable/btn_save"
-        android:text="Save"
+        android:text="Sent"
         android:textAppearance="@style/textInBtn"
         android:fontFamily="@font/opensans_extrabold"
         app:layout_constraintBottom_toBottomOf="parent"
