@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeTheme"
+    android:background="#F8FFF8">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vector_arrow_back"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="103dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+    <TextView
+        android:id="@+id/textChooseColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="180dp"
+        android:text="Choose a color"
+        android:textAppearance="@style/topicOfScreen"
+        android:fontFamily="@font/opensans_extrabold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+    <RadioGroup
+        android:id="@+id/grRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="250dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+        <RadioButton
+            android:id="@+id/rabtnTheme1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_btn"
+            />
+
+        <RadioButton
+            android:id="@+id/rabtnTheme2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_btn2"
+            android:layout_marginLeft="25dp"/>
+
+        <RadioButton
+            android:id="@+id/rabtnTheme3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_btn3"
+            android:layout_marginLeft="25dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rabtnTheme4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_btn4"
+            android:layout_marginLeft="25dp"/>
+
+        <RadioButton
+            android:id="@+id/rabtnTheme5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_btn5"
+            android:layout_marginLeft="25dp"/>
+
+        <RadioButton
+            android:id="@+id/rabtnTheme6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_btn6"
+            android:layout_marginLeft="-340dp"
+            android:layout_marginTop="70dp"/>
+
+        <RadioButton
+            android:id="@+id/rabtnTheme7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_btn7"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="70dp"/>
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

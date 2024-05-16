@@ -10,6 +10,7 @@
     tools:context=".InfoChange">
 
     <ImageView
+        android:id="@+id/imgBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/vector_arrow_back"
@@ -141,7 +142,7 @@
                 android:layout_marginTop="323dp"
                 android:layout_marginLeft="157dp">
                 <Button
-                    android:id="@+id/rectangle_9"
+                    android:id="@+id/btnEditName"
                     android:layout_height="31dp"
                     android:layout_width="114.82dp"
                     android:background="@drawable/btn_edit"
@@ -210,19 +211,20 @@
                 android:layout_width="347dp"
                 android:layout_height="44dp"
                 android:layout_marginLeft="42dp"
-                android:layout_marginTop="432dp">
+                android:layout_marginTop="432dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
 
                 <Button
                     android:id="@+id/btnChangeTheme"
                     android:layout_width="347dp"
                     android:layout_height="44dp"
                     android:background="@drawable/btn_change_theme"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
+                     />
 
                 <ImageView
                     android:id="@+id/icon_Change_Theme"
@@ -310,7 +312,7 @@
                 android:layout_marginLeft="42dp"
                 android:layout_marginTop="540dp">
                 <Button
-                    android:id="@+id/btn_change_phone_number"
+                    android:id="@+id/btnChangePhoneNumber"
                     android:layout_width="347dp"
                     android:layout_height="44dp"
                     android:layout_alignParentLeft="true"
@@ -443,7 +445,7 @@
                 android:layout_marginTop="630dp">
 
                 <Button
-                    android:id="@+id/btnChangePasswor"
+                    android:id="@+id/btnChangePassword"
                     android:layout_width="347dp"
                     android:layout_height="44dp"
                     android:background="@drawable/btn_normal"
