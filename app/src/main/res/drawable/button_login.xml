@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="30dp" /> <!-- Điều chỉnh giá trị radius để đặt góc bo -->
+    <solid android:color="#738F81" /> <!-- Màu nền của nút -->
+</shape>

@@ -92,7 +92,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="#fff"
+        android:background="@drawable/button_cancel"
         android:elevation="8dp"
         android:letterSpacing="0.08"
         android:text="JOIN US"
@@ -106,5 +106,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.93"
         app:layout_constraintWidth_percent="0.7"
+
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
