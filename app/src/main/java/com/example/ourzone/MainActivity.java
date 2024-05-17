@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+//        setContentView(R.layout.activity_friend);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -35,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
         Button joinBtn = findViewById(R.id.joinBtn);
         joinBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(this, SignupActivity.class);
+//            Intent intent = new Intent(this, SignupActivity.class);
+            Intent intent = new Intent(this, FriendActivity.class);
             startActivity(intent);
         });
 

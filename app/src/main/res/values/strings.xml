@@ -55,4 +55,37 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="change_theme">Change Theme</string>
+    <string name="friends">Friends</string>
+    <string name="friend_limi">Friend limit reached</string>
+    <string name="add_a_new_f">Add a new friend </string>
+
+    <string name="your_friend">Your Friends</string>
+
+    <string name="friends_req">
+        Friends Request
+    </string>
+    <string name="friendimage">FriendImage</string>
+    <string name="next_arrow">Next Arrow</string>
+    <string name="copy_link">
+            Copy link
+        </string>
+    <string name="invite_from">
+            Invite from other apps
+        </string>
+    <string name="accept">
+        Accept
+    </string>
+    <string name="delete_this">
+        Delete this friend?
+    </string>
+
+    <string name="are_you_sur">
+        Are you sure?
+    </string>
+    <string name="yes">
+        Yes
+    </string>
+
+
+
 </resources>

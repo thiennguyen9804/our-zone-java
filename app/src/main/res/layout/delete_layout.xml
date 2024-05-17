@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="bottom">
+
+    <Button
+        android:id="@+id/delete_this"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:text="@string/delete_this"
+        android:textColor="#F54242"
+        android:textStyle="bold"
+        android:textAppearance="@style/delete_this"
+        android:background="#E0E0E0"
+        android:drawableStart="@drawable/dlt_icon"
+        android:paddingStart="20dp"
+  />
+    </LinearLayout>
+
+

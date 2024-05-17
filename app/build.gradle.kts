@@ -1,10 +1,6 @@
 plugins {
-    alias(libs.plugins.androidApplication)
+    id("com.android.application")
     id("com.google.gms.google-services")
-//    id("com.android.application")
-
-    // Add the Google services Gradle plugin
-//    id("com.google.gms.google-services")
 }
 
 android {
@@ -40,7 +36,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -52,11 +47,16 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
     // Import the BoM for the Firebase platform
     implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
 
     // Declare the dependency for the Cloud Firestore library
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation("com.google.firebase:firebase-firestore")
-    implementation ("androidx.cardview:cardview:1.0.0")
+    implementation("androidx.cardview:cardview:1.0.0")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation ("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
+    implementation ("androidx.appcompat:appcompat:1.3.0")
 }
