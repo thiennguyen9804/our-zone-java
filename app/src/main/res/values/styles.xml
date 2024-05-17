@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="cameraStyle">
+        <item name="borderRound">4dp</item>
+        <item name="borderWidth">40dp</item>
+        <item name="strokeColor">#AAC2B3</item>
+    </style>
+</resources>
