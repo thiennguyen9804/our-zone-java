@@ -1,14 +1,34 @@
 package com.example.ourzone;
 
+import static android.service.controls.ControlsProviderService.TAG;
+
+import android.Manifest;
 import android.app.Activity;
+import android.content.ContentValues;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.camera.core.Camera;
+import androidx.camera.core.CameraSelector;
+import androidx.camera.core.ImageCapture;
+import androidx.camera.core.ImageCaptureException;
+import androidx.camera.core.Preview;
+import androidx.camera.lifecycle.ProcessCameraProvider;
+import androidx.camera.view.PreviewView;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -20,13 +40,19 @@ import androidx.recyclerview.widget.SnapHelper;
 import com.example.ourzone.Adapter.DemoAdapter;
 import com.example.ourzone.Models.MediaObject;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import java.util.concurrent.ExecutionException;
+
+import com.google.common.util.concurrent.ListenableFuture;
 
 public class HomeActivity extends AppCompatActivity {
     private List<MediaObject> mediaObjectList = new ArrayList<>();
     private DemoAdapter demoAdapter;
     private RecyclerView recyclerview;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +64,16 @@ public class HomeActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
         init();
     }
+
+
+
+
+
+
 
     public static void setWindowFlag(Activity activity, final int bits, boolean on) {
         Window win = activity.getWindow();
@@ -62,15 +96,16 @@ public class HomeActivity extends AppCompatActivity {
         SnapHelper mSnapHelper = new PagerSnapHelper();
         mSnapHelper.attachToRecyclerView(recyclerview);
 
-        mediaObjectList.add(new MediaObject());
-        mediaObjectList.add(new MediaObject());
-        mediaObjectList.add(new MediaObject());
-        mediaObjectList.add(new MediaObject());
-        mediaObjectList.add(new MediaObject());
-        mediaObjectList.add(new MediaObject());
-        mediaObjectList.add(new MediaObject());
-        mediaObjectList.add(new MediaObject());
-        mediaObjectList.add(new MediaObject());
+
+//        mediaObjectList.add(new MediaObject());
+//        mediaObjectList.add(new MediaObject());
+//        mediaObjectList.add(new MediaObject());
+//        mediaObjectList.add(new MediaObject());
+//        mediaObjectList.add(new MediaObject());
+//        mediaObjectList.add(new MediaObject());
+//        mediaObjectList.add(new MediaObject());
+//        mediaObjectList.add(new MediaObject());
+//        mediaObjectList.add(new MediaObject());
 
         demoAdapter = new DemoAdapter(mediaObjectList, getApplicationContext());
         recyclerview.setAdapter(demoAdapter);

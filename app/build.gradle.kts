@@ -40,23 +40,45 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(libs.lifecycle.livedata.ktx)
-    implementation(libs.lifecycle.viewmodel.ktx)
-    implementation(libs.navigation.fragment)
-    implementation(libs.navigation.ui)
+//    implementation(libs.androidx.navigation.fragment)
+//    implementation(libs.androidx.navigation.ui)
+//    implementation(libs.compose.preview.renderer)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
     // Import the BoM for the Firebase platform
+    implementation("com.google.firebase:firebase-auth")
     implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
 
     // Declare the dependency for the Cloud Firestore library
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation("com.google.firebase:firebase-firestore")
+
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation ("com.github.bumptech.glide:glide:4.12.0")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
     implementation ("androidx.appcompat:appcompat:1.3.0")
 }
+
+//    implementation ("androidx.cardview:cardview:1.0.0"
+
+
+
+//
+//
+//    // camera
+//
+//    implementation("androidx.camera:camera-core:1.3.3")
+//    implementation("androidx.camera:camera-camera2:1.3.3")
+//    implementation("androidx.camera:camera-view:1.3.3")
+////    implementation("androidx.camera:camera-video:1.3.3")
+//    implementation("androidx.camera:camera-lifecycle:1.3.3")
+//    implementation("androidx.camera:camera-video:1.3.3")
+//
+////    implementation("androidx.camera:camera-view:${camerax_version}"
+//    implementation("androidx.camera:camera-extensions:1.3.3")
+//
+//}
+

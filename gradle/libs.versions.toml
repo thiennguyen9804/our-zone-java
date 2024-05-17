@@ -14,6 +14,9 @@ googleServices = "4.4.1"
 firebaseFirestore = "25.0.0"
 navigationFragment = "2.6.0"
 navigationUi = "2.6.0"
+composePreviewRenderer = "0.0.1-alpha01"
+navigationFragmentVersion = "2.7.7"
+navigationUiVersion = "2.7.7"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -30,6 +33,9 @@ google-services = { group = "com.google.gms", name = "google-services", version.
 firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+compose-preview-renderer = { group = "com.android.tools.compose", name = "compose-preview-renderer", version.ref = "composePreviewRenderer" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragmentVersion" }
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUiVersion" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
